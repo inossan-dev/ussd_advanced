@@ -1,3 +1,11 @@
+## 3.0.0
+
+* Require Dart 3.12 and adopt the Flutter platform interface.
+* Split dialing, multi-session replies, permissions, and USSD parsing behind replaceable contracts.
+* `onEnd` returns a shared `Stream` instead of a new `StreamController`.
+* `requestPermissions` returns a `Future` and no longer hides platform failures.
+* Complete the Android cancel callback so `cancelSession` finishes.
+
 ## 2.0.0
 
 * Open Accessibility settings if ussd service is turned off

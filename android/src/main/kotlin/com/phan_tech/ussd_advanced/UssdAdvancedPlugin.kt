@@ -173,8 +173,9 @@ class UssdAdvancedPlugin: FlutterPlugin, MethodCallHandler, ActivityAware, Basic
         }
 
       }
-      "multisessionUssdCancel" ->{
+      "multisessionUssdCancel" -> {
         multisessionUssdCancel()
+        result.success(null)
       }
       else -> {
         result.notImplemented()
